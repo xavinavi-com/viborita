@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Juego de la viborita</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+         este codigo lo he  generado con una inteligencia artificial.
+      </div>
+    <div id="canvas-container">
+        <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+   
+    <br>
+    <div class="botones-container">
+      <button id="boton-arriba">&uarr;</button>
+      <button id="boton-abajo">&darr;</button>
+      <button id="boton-izquierda">&larr;</button>
+      <button id="boton-derecha">&rarr;</button>
+    </div>
+    <br>
+    <button class="snake-button" onclick="restart()">Jugar Serpiente</button>
+    <script src="snake.js"></script>
+  </body>
+</html>
